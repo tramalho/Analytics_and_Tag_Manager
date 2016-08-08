@@ -33,8 +33,9 @@ public class MainActivity extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        // TODO
         // Make sure that Analytics tracking has started
+        MyApplication myApplication = (MyApplication) getApplication();
+        myApplication.startTracking();
     }
 
     /*
