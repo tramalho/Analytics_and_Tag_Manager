@@ -17,7 +17,7 @@ public class MyApplication extends Application{
         if(mTracker == null){
             GoogleAnalytics instance = GoogleAnalytics.getInstance(this);
             mTracker = instance.newTracker(R.xml.track_app);
-            mTracker.enableAutoActivityTracking(true);
+            instance.enableAutoActivityReports(this);
         }
     }
 
