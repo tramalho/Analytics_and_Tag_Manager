@@ -64,6 +64,16 @@ public class ShowDinnerActivity extends Activity {
     }
 
     public void removeMeal (View view) {
+
+        AnalyticsUtil.UtilEvent utilEvent =
+
+                new AnalyticsUtil.UtilEvent(
+                        getString(R.string.dinner_action),
+                        getString(R.string.remove_dinner),
+                        mDinner);
+
+        new AnalyticsUtil().trackEvent(utilEvent, getApplication());
+
         // Start an intent to remove the dinner suggestion
         Intent intent = new Intent(this, RemoveMealActivity.class);
         intent.putExtra(selectedDinnerExtrasKey, mDinner);
