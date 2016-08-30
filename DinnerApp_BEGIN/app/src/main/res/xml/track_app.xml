@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="ga_trackingId">@string/GOOGLE_ANALYTICS_KEY</string>
+    <string name="ga_trackingId">UA-82054470-1</string>
     <bool name="ga_autoActivityTracking">true</bool>
 
     <screenName name="com.example.android.dinnerapp.MainActivity">
