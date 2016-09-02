@@ -18,4 +18,10 @@
     <screenName name="com.example.android.dinnerapp.ShowRecipeActivity">
         Show recipe
     </screenName>
+    <screenName name="com.example.android.dinnerapp.ShowAllDinnersActivity">
+        All Dinners
+    </screenName>
+    <screenName name="com.example.android.dinnerapp.OrderDinnerActivity">
+        Order Dinner
+    </screenName>
 </resources>

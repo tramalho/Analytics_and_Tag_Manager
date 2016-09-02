@@ -43,6 +43,8 @@ public class OrderDinnerActivity extends Activity {
         String dinner = getIntent().getStringExtra(selectedDinnerExtrasKey);
         tv.setText("This is where you will order the selected dinner: \n\n" +
                 dinner);
+
+        new AnalyticsUtil().trackProduct(dinner, getApplication());
     }
 
 }
